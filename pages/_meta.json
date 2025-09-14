@@ -1,0 +1,14 @@
+{
+  "index": "Home",
+  "teams": "Teams",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://www.arisechurch.com/contact",
+    "newWindow": true
+  }
+}

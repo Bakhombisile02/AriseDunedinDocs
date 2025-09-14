@@ -1,0 +1,74 @@
+# System Overview
+
+This section explains the purpose of each key component and how they work together to deliver video and audio to the main hall, the parents' room, and online streams.
+
+## Core Components and Signal Flow
+
+Our AV system consists of several interconnected components that work together to capture, process, and distribute audio-visual content.
+
+### Primary Video Components
+
+**Sony Camera**
+- Captures the primary video of the service
+- Provides high-quality SDI video output
+- Professional-grade image quality for live streaming
+
+**Blackmagic ATEM Production Studio 4K**
+- Central video switcher and heart of our system
+- Receives camera feed and graphics from AV1 PC
+- Allows operator to switch between different video sources
+- Outputs final "Program" feed to multiple destinations
+
+**Blackmagic Smart Videohub**
+- Video routing device that directs signals
+- Sends Program feed to projector and Parents' Room
+- Pre-configured for normal operation
+- Manages signal distribution throughout the facility
+
+### Graphics and Control
+
+**AV1 PC (with EasyWorship)**
+- Generates song lyrics and sermon slides
+- Creates all on-screen graphics and announcements
+- Output sent directly to ATEM switcher
+- Primary computer for service presentation
+
+**Elgato Stream Deck**
+- Programmable keypad for one-touch operation
+- Remote control for EasyWorship and ATEM switcher
+- Streamlines common tasks during services
+- Reduces complexity for operators
+
+### Streaming and Audio
+
+**Resi Decoder**
+- Receives live video streams from other campuses
+- Enables broadcasting of remote services
+- Allows multi-campus connectivity
+- Specialized streaming hardware
+
+**Allen & Heath Audio Mixer**
+- Handles all audio routing and mixing
+- Receives audio from AV1 PC via ethernet
+- Provides sound to main hall and parents' room
+- Professional audio processing and distribution
+
+## Signal Flow Diagram
+
+```
+Sony Camera → ATEM Switcher ← AV1 PC (Graphics)
+     ↓              ↓
+Video Hub → [Main Projector]
+     ↓              ↓
+[Parents' Room] [Online Stream]
+```
+
+## Output Destinations
+
+Our system serves three primary destinations:
+
+1. **Main Hall Projector** - Primary congregational display
+2. **Parents' Room TV** - Separate viewing area for families
+3. **Online Streaming** - Connection to other ARISE campuses
+
+This integrated approach ensures consistent, high-quality audio-visual presentation across all viewing locations.

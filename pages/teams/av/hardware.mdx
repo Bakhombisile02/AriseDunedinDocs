@@ -1,0 +1,135 @@
+# Hardware Deep Dive
+
+Let's examine each piece of equipment in detail to understand their function and operation.
+
+## Video Production Equipment
+
+### Blackmagic ATEM 1 M/E Production Studio 4K
+
+import { Callout } from 'nextra/components'
+
+<Callout type="info" emoji="🎥">
+The ATEM Switcher is the heart of our video system.
+</Callout>
+
+**Function:** Central video mixing console
+- Combines multiple video sources (camera, PC graphics, etc.)
+- Front panel buttons select which source is live
+- Professional broadcast-quality switching
+- Multiple input and output connections
+
+**Operation:**
+- Program row shows current live output
+- Preview row shows next source to go live
+- Cut and Auto buttons transition between sources
+- Upstream/Downstream keyers for graphics overlay
+
+**Further Reading:** [Blackmagic ATEM Switchers Official Manual](https://www.blackmagicdesign.com/support/family/atem-live-production-switchers)
+
+### Blackmagic Smart Videohub
+
+**Function:** Video signal routing matrix
+- Manages distribution of video signals
+- Routes feeds to multiple destinations
+- Pre-configured for normal service operation
+- Minimal adjustment needed during services
+
+**Key Features:**
+- Multiple input and output ports
+- Cross-point routing capability
+- Status LED indicators
+- Reliable signal distribution
+
+### Sony PXW-Series Camera
+
+<Callout type="warning" emoji="📷">
+Handle camera equipment with care - professional broadcast equipment.
+</Callout>
+
+**Function:** Primary video capture device
+- Professional-grade video quality
+- SDI output for broadcast applications
+- Manual and automatic exposure controls
+- Designed for live event production
+
+**Tripod Operation:**
+To mount or unmount from the Vinten tripod:
+
+1. **Locking Latch** - Small lever that secures camera plate
+   - Prevents camera from sliding when locked
+   - Always engage before releasing hands from camera
+
+2. **Release Button** - Allows camera plate removal
+   - Press to slide camera off tripod head
+   - Ensure locking latch is disengaged first
+
+**Safety Notes:**
+- Always support camera weight when mounting/unmounting
+- Check locking latch is secure before operating
+- Use lens cap when not in use to protect optics
+
+## Streaming and Graphics
+
+### Resi Decoder
+
+<Callout type="info" emoji="📡">
+Specialized computer for inter-campus streaming connections.
+</Callout>
+
+**Function:** Internet-based video streaming receiver
+- Pulls live video streams from other ARISE locations
+- Enables multi-campus service broadcasting
+- Dedicated hardware for reliable streaming
+- High-quality video over internet connection
+
+**Key Features:**
+- Event scheduling and management
+- Real-time stream monitoring
+- Automatic connection handling
+- Timeline cue management
+
+**Further Reading:** [Resi Decoder Support Center](https://support.resi.io/hc/en-us/categories/360000134791-Resi-Decoder)
+
+### AV1 PC Configuration
+
+**Function:** Graphics and presentation computer
+- Runs EasyWorship presentation software
+- Generates lyrics, slides, and announcements
+- High-performance graphics output
+- Dedicated for AV operations
+
+**Software Stack:**
+- Windows operating system
+- EasyWorship presentation software
+- Graphics drivers for multiple outputs
+- Network connectivity for audio routing
+
+### Elgato Stream Deck
+
+**Function:** Programmable control interface
+- Customizable LCD buttons for one-touch operation
+- Integrates with EasyWorship and ATEM
+- Reduces complexity during live operation
+- Programmable macros for common tasks
+
+**Button Configuration:**
+- EasyWorship sync and control
+- Song navigation (Chorus/Bridge shortcuts)
+- ATEM source selection
+- Custom macros for frequent operations
+
+## Audio Integration
+
+### Allen & Heath Audio Connection
+
+**Function:** Professional audio processing
+- Receives audio from AV1 PC via ethernet
+- Distributes audio to main hall speakers
+- Provides parents' room audio feed
+- Professional mixing and processing capabilities
+
+**Network Audio:**
+- Digital audio over ethernet (Dante/AVB)
+- High-quality, low-latency audio transmission
+- Integrated with video system timing
+- Professional broadcast audio standards
