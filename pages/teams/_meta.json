@@ -1,4 +1,8 @@
 {
+  "join": {
+    "title": "🔍 Find Your Team",
+    "type": "page"
+  },
   "av": "AV Team",
   "sound": "Sound Team", 
   "packdown": "Packdown Team"
