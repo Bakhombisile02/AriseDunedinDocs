@@ -1,0 +1,226 @@
+# Advanced Troubleshooting
+
+This section provides solutions for common issues you may encounter during AV operations.
+
+import { Callout } from 'nextra/components'
+
+<Callout type="warning" emoji="🔧">
+If you're unsure about any troubleshooting procedure, contact your team leader immediately.
+</Callout>
+
+## Common Issues and Solutions
+
+### Power and Connectivity Issues
+
+| Problem | Possible Cause | Solution |
+|---------|----------------|----------|
+| **No power to the rack** | Main power cable unplugged | Check that the main power cord is plugged securely into the wall outlet |
+| **No Internet Connection** | Fibre optic cable unplugged or damaged | Gently check that both ends of the thin, light blue cable are securely plugged in |
+| **No Sound at Sound Desk** | Audio ethernet cable unplugged | Ensure the black network cable is connected to Port 47 on the wall and DX1 on the rack |
+
+### Video Display Issues
+
+| Problem | Possible Cause | Solution |
+|---------|----------------|----------|
+| **No Image on Main Projector** | HDMI cable disconnected or projector off | Check HDMI cable runs from PROG port on rack to projector. Confirm projector has green power light |
+| **No Video from Camera** | Camera SDI cable disconnected | Make sure SDI cable is securely connected to SDI OUT on camera and INPUT 1 on rack |
+| **Wrong video on projector** | ATEM switcher wrong source selected | On ATEM front panel, ensure correct input button (Input 1 for Camera, PC input for graphics) is lit in "Program" row |
+
+### Control System Issues
+
+| Problem | Possible Cause | Solution |
+|---------|----------------|----------|
+| **Stream Deck unresponsive** | USB connection issue or software not synced | 1. Try unplugging two of the AV1 USBs on the front and swapping their ports<br/>2. Open EasyWorship and press the EasyWorship icon button on Stream Deck to sync |
+| **EasyWorship not responding to Stream Deck** | Software not focused or sync lost | 1. Click on EasyWorship window to make it active<br/>2. Press EasyWorship icon on Stream Deck<br/>3. Restart EasyWorship if necessary |
+
+## Detailed Troubleshooting Procedures
+
+### Power System Diagnosis
+
+<Callout type="info" emoji="⚡">
+Always check power issues first - many problems stem from loose connections.
+</Callout>
+
+**Step-by-Step Power Check:**
+1. **Rack Power**
+   - Locate main power cable at rack bottom
+   - Ensure secure connection to wall outlet
+   - Check for blown fuses or tripped breakers
+   - Verify LED indicators on equipment
+
+2. **Individual Component Power**
+   - Check each piece of equipment for power LEDs
+   - Verify cooling fans are operating
+   - Look for any error indicators or warning lights
+
+3. **Power Sequencing**
+   - If restarting, power down everything first
+   - Wait 30 seconds between power cycles
+   - Power up rack equipment first, then computers
+
+### Network and Connectivity Diagnosis
+
+**Internet Connection Testing:**
+1. Check fibre optic cable connections
+   - Wall port (pink tape marking)
+   - Rack port (Fibre From Wall)
+   - Look for bent or damaged cable
+
+2. **Audio Network Issues**
+   - Verify ethernet cable in Port 47 (wall) to DX1 (rack)
+   - Check network activity LEDs
+   - Coordinate with sound team for audio confirmation
+
+3. **Network Equipment Reset**
+   - If internet issues persist, power cycle network equipment
+   - Wait 2 minutes for full restart
+   - Test connectivity before proceeding
+
+### Video Signal Troubleshooting
+
+**Camera Signal Issues:**
+1. **Physical Connections**
+   - Check SDI cable at camera (SDI OUT)
+   - Check SDI cable at rack (INPUT 1)
+   - Ensure cables are not damaged or bent
+
+2. **Camera Settings**
+   - Verify camera is powered on
+   - Check camera output settings
+   - Ensure lens cap is removed
+   - Verify focus and exposure settings
+
+3. **ATEM Input Verification**
+   - Check ATEM front panel for input signal indicators
+   - Verify correct input is selected in Program row
+   - Test with known good cable if available
+
+**Projector Display Problems:**
+1. **Connection Verification**
+   - HDMI from PROG port to projector
+   - Projector power status (green light)
+   - Correct input selected on projector
+
+2. **Signal Path Testing**
+   - Check ATEM output settings
+   - Verify video routing through Video Hub
+   - Test with different HDMI cable if needed
+
+3. **Projector Specific Issues**
+   - Lamp hours (may need replacement)
+   - Filter cleaning required
+   - Overheating protection activated
+
+### Software and Control Issues
+
+**EasyWorship Problems:**
+1. **Application Issues**
+   - Restart EasyWorship software
+   - Check for software updates
+   - Verify presentation files are loading correctly
+   - Clear software cache if necessary
+
+2. **Display Output Issues**
+   - Check computer display settings
+   - Verify multiple monitor configuration
+   - Test with different output cables
+   - Restart graphics drivers if needed
+
+3. **Performance Problems**
+   - Close unnecessary programs
+   - Check computer memory usage
+   - Restart computer if sluggish performance
+   - Verify hard drive space available
+
+**Stream Deck Connectivity:**
+1. **USB Connection Issues**
+   - Try different USB ports
+   - Check USB cable integrity
+   - Restart Stream Deck software
+   - Power cycle Stream Deck device
+
+2. **Software Integration**
+   - Ensure EasyWorship is active window
+   - Press EasyWorship sync button
+   - Restart both applications if needed
+   - Check for software conflicts
+
+### Streaming and Remote Connection Issues
+
+**Resi Decoder Problems:**
+1. **Connection Issues**
+   - Check internet connectivity
+   - Verify event selection is correct
+   - Monitor connection status indicators
+   - Contact hosting campus if persistent issues
+
+2. **Stream Quality Issues**
+   - Check available bandwidth
+   - Lower stream quality settings if needed
+   - Use wired connection instead of WiFi
+   - Clear decoder cache
+
+3. **Audio/Video Sync Issues**
+   - Restart Resi decoder
+   - Check for network latency
+   - Adjust buffer settings
+   - Coordinate with hosting campus technical team
+
+## Emergency Procedures
+
+### Equipment Failure During Service
+
+**Immediate Actions:**
+1. **Switch to Backup**
+   - Use BLACK button on ATEM for immediate cutoff
+   - Switch to backup presentation method
+   - Inform worship leader of technical difficulties
+
+2. **Quick Fixes**
+   - Check obvious connection issues
+   - Power cycle problematic equipment
+   - Switch to manual operation if automated systems fail
+
+3. **Communication**
+   - Update team leader immediately
+   - Coordinate with sound team
+   - Prepare congregation announcement if needed
+
+### Recovery Procedures
+
+**Post-Incident Actions:**
+1. Document what happened and when
+2. Note which troubleshooting steps were attempted
+3. Report to technical team for follow-up
+4. Schedule equipment inspection if needed
+
+<Callout type="info" emoji="📞">
+**Emergency Contacts:**
+- Team Leader: [Contact information]
+- Technical Support: [Contact information]
+- Facilities Manager: [Contact information]
+</Callout>
+
+## Preventive Maintenance
+
+### Weekly Checks
+- [ ] Verify all cable connections are secure
+- [ ] Check equipment for dust accumulation
+- [ ] Test backup procedures
+- [ ] Update software if needed
+
+### Monthly Maintenance
+- [ ] Clean camera lens and equipment
+- [ ] Check projector filter status
+- [ ] Verify all emergency procedures
+- [ ] Review and update documentation
+
+### Quarterly Reviews
+- [ ] Full system performance evaluation
+- [ ] Equipment inspection and cleaning
+- [ ] Staff training refresher
+- [ ] Documentation updates and improvements
+
+<Callout type="success" emoji="✅">
+Regular maintenance prevents most technical issues and ensures reliable operation during services.
+</Callout>

@@ -1,0 +1,181 @@
+# Step-by-Step Setup Guide
+
+Follow these steps in order to get the system up and running for each service. Complete all steps methodically to ensure reliable operation.
+
+import { Steps } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+<Callout type="warning" emoji="⚡">
+Always follow the power-up sequence to avoid equipment damage.
+</Callout>
+
+<Steps>
+
+### Power Up the AV Rack
+
+The first step is to get power to the rack itself.
+
+**Procedure:**
+1. Locate the main power cable coiled at the bottom of the rack (rear)
+2. Plug it securely into a nearby wall power outlet
+3. Verify lights turn on for various components inside the rack
+4. Wait 30 seconds for equipment to initialize
+
+**Success Indicators:**
+- LED status lights visible on equipment
+- Fan noise from cooling systems
+- Display screens becoming active
+
+### Connect Rack to Building Infrastructure
+
+Next, establish the essential building connections using the wall plate.
+
+#### Internet Connection (Fibre Optic)
+
+**Equipment Needed:** Thin, light blue fibre optic cable
+
+**Procedure:**
+1. Take the fibre optic cable
+2. Plug the **larger end** into wall port marked with **pink tape** (under "FIBRE WAYLINES")
+3. Plug the **smaller end** into port labeled **"Fibre From Wall"** on back of rack
+
+<Callout type="info" emoji="🔌">
+Handle fibre optic cables gently - they contain fragile glass fibres.
+</Callout>
+
+#### Audio Connection (Ethernet)
+
+**Equipment Needed:** Black network cable
+
+**Procedure:**
+1. Take the black network cable
+2. Plug one end into **Port 47** on the wall plate
+3. Plug other end into port labeled **"DX1"** on back of rack (top row)
+4. This connection sends audio to the main sound desk
+
+**Verification:**
+- Network activity lights should be visible
+- Audio connection confirmed with sound team
+
+### Connect Video Sources and Outputs
+
+Now establish all video connections for camera input and display outputs.
+
+#### Camera Connection
+
+**Equipment Needed:** SDI cable
+
+**Procedure:**
+1. Take an SDI cable
+2. Connect one end to **SDI OUT** port on camera
+3. Connect other end to **INPUT 1** on back of rack (top row)
+4. Ensure connections are firmly seated
+
+**Camera Setup:**
+- Remove lens cap
+- Power on camera
+- Set to appropriate shooting mode
+- Check camera position and framing
+
+#### Main Projector Connection
+
+**Equipment Needed:** HDMI cable
+
+**Procedure:**
+1. Take an HDMI cable
+2. Connect one end to port labeled **"PROG"** on back of rack (bottom row)
+3. Connect other end to **HDMI input** on side of projector
+4. Power on the projector
+5. Verify status light turns **solid green**
+
+**Projector Checklist:**
+- ✅ Power cable connected
+- ✅ HDMI cable from rack
+- ✅ Green status light
+- ✅ Lens cap removed
+
+#### Parents' Room TV Connection
+
+**Equipment Needed:** Long SDI cable
+
+**Procedure:**
+1. Take the long SDI cable
+2. Connect one end to port labeled **"PARENTS"** on back of rack (bottom row)
+3. Run cable to Parents' Room
+4. Connect to **SDI IN** port on small black Blackmagic Micro Converter box
+5. Verify Parents' Room TV is powered on
+
+**Parents' Room Setup:**
+- Micro converter powered on
+- TV input set to correct source
+- Audio levels appropriate for room
+
+### Set Up Operator's Desk
+
+Final step: Connect the computer and control interfaces.
+
+#### Computer Connection
+
+**Equipment:** AV1 cable bundle (labeled on front of rack)
+
+**Procedure:**
+1. Locate the **AV1** cable bundle on front of rack
+2. Connect **HDMI** cable to AV1 PC
+3. Connect **two USB cables** to AV1 PC
+4. Connect **third USB** to one of the USB ports above the PC
+
+**Computer Startup:**
+1. Power on AV1 PC
+2. Log in with provided credentials
+3. Launch EasyWorship software
+4. Verify multiple display outputs working
+
+#### Stream Deck Connection
+
+**Equipment:** Elgato Stream Deck (from top drawer)
+
+**Procedure:**
+1. Retrieve Stream Deck from storage drawer
+2. Connect to **USB-C port** in AV1 cable bundle
+3. Verify Stream Deck displays icons
+4. Test button responsiveness
+
+**Stream Deck Sync:**
+- Press EasyWorship icon button to sync
+- Warning icons should disappear
+- Test shortcut buttons (Chorus/Bridge)
+
+</Steps>
+
+## Setup Verification Checklist
+
+Before beginning service operation, verify all systems:
+
+### Video Systems
+- [ ] Camera powered and positioned correctly
+- [ ] Main projector displaying test content
+- [ ] Parents' Room TV receiving signal
+- [ ] ATEM switcher showing camera input
+- [ ] Video quality acceptable on all outputs
+
+### Audio Systems  
+- [ ] Audio connection to sound desk confirmed
+- [ ] AV1 PC audio routing verified
+- [ ] Parents' Room audio levels appropriate
+- [ ] Network audio connection stable
+
+### Control Systems
+- [ ] EasyWorship running and responsive
+- [ ] Stream Deck synced and functional
+- [ ] ATEM switcher responding to controls
+- [ ] All shortcut buttons working
+
+### Streaming (if applicable)
+- [ ] Resi decoder connected to internet
+- [ ] Event selected and buffering
+- [ ] Stream quality monitoring active
+- [ ] Backup plans prepared
+
+<Callout type="success" emoji="✅">
+Complete setup typically takes 15-20 minutes. Allow extra time before services for testing and troubleshooting.
+</Callout>
